@@ -25,3 +25,9 @@
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
 	url = https://github.com/rking/ag.vim.git
+[submodule "bundle/groovyindent"]
+	path = bundle/groovyindent
+	url = https://github.com/vim-scripts/groovyindent.git
+[submodule "bundle/groovyindent-unix"]
+	path = bundle/groovyindent-unix
+	url = https://github.com/vim-scripts/groovyindent-unix.git
