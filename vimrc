@@ -52,3 +52,5 @@ nmap <silent> <leader>g :TestVisit<CR>
 " autosave every 200ms
 set updatetime=200
 autocmd CursorHold,CursorHoldI * update
+" tell vim-ack to use ag bin for searching
+let g:ackprg = 'ag --vimgrep'
