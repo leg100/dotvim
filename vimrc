@@ -15,6 +15,9 @@ set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 " Show syntax highlighting
 syntax enable
 
+" show vertical line after 80 chars
+set colorcolumn=80
+
 colorscheme solarized
 
 " NERDTree
@@ -25,7 +28,7 @@ map <leader>r :NERDTreeFind<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Set width of NT
-let g:NERDTreeWinSize = 34 
+let g:NERDTreeWinSize = 34
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -52,5 +55,17 @@ nmap <silent> <leader>g :TestVisit<CR>
 " autosave every 200ms
 set updatetime=200
 autocmd CursorHold,CursorHoldI * update
+
+
+" show leading tabs
+set list
+set listchars=tab:>-
+
 " tell vim-ack to use ag bin for searching
 let g:ackprg = 'ag --vimgrep'
+
+" shortcut to enable/disable paste mode
+set pastetoggle=<leader>p
+
+" autoindent python files
+au BufRead,BufNewFile *.py setl sts=4 sw=4 et
