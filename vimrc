@@ -18,7 +18,7 @@ syntax enable
 " show vertical line after 80 chars
 set colorcolumn=80
 
-colorscheme 3dglasses
+colorscheme SweetCandy
 
 " NERDTree
 map <leader>t :NERDTreeToggle<CR>
