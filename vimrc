@@ -36,9 +36,6 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" Indent values inside ruby block
-map <leader>i virga<space>
-
 " enable builtin matchit plugin
 runtime macros/matchit.vim
 
