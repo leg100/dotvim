@@ -69,3 +69,7 @@ set pastetoggle=<leader>p
 
 " autoindent python files
 au BufRead,BufNewFile *.py setl sts=4 sw=4 et
+
+" https://vi.stackexchange.com/questions/5128/matchpairs-makes-vim-slow
+let g:matchparen_timeout = 2
+let g:matchparen_insert_timeout = 2
