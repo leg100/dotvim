@@ -39,9 +39,6 @@ nmap ga <Plug>(EasyAlign)
 " enable builtin matchit plugin
 runtime macros/matchit.vim
 
-" necssary for vim-textobj-rubyblock
-set nocompatible
-
 " set bindings for running tests
 nmap <silent> <leader>n :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
